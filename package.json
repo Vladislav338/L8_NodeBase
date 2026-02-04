@@ -1,0 +1,27 @@
+{
+  "name": "lr8re",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  "start": "cross-env NODE_ENV=development nodemon index.js",
+  "build": "cross-env NODE_ENV=production node index.js",
+  "deploy": "cross-env NODE_ENV=domain node index.js",
+  "test": "node use.js",
+  "test-os": "node test-os.js",
+  "test-fs": "node test-fs.js",
+  "test-modules": "node test-modules.js"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "dotenv": "^17.2.3"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "nodemon": "^3.1.11"
+  }
+}
